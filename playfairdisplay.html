@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Playfair Display</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/playfairdisplay.css">
+</head>
+
+<body>
+    <header class="menylinje">
+        <div class="grid-left">
+            <a href="#section1">Playfair Display</a>
+            <a href="#section2">Font</a>
+            <a href="#section3">Characters</a>
+            <a href="#section4">Styles</a>
+            <a href="#section5">Last words</a>
+        </div>
+        <div class=grid-center>
+            <a class="logo" href="index.html">FONTS</a>
+        </div>
+        <div class="grid-right">
+            <a href="roboto.html" id="robotolink"><img src="img/roboto_symbol_bold.svg" alt="switch to Roboto"></a>
+            <img src="img/playfair_symbol-bold.svg" alt="Playfair Display Symbol">
+        </div>
+    </header>
+    <section id="section1">
+        <img src="img/playfair_symbol.svg" alt="roboto symbol">
+        <h1>Playfair Display</h1>
+        <p class="navn">by <br> Christian Robertson</p>
+        <div class="line-separator1"></div>
+        <p class="playfair_info">Playfair is a transitional design. In the European Enlightenment in the late 18th
+            century, broad nib quills were replaced by pointed steel pens as the popular writing tool of the day.
+            Together with developments in printing technology, ink, and paper making, it became to print letterforms of
+            high contrast and delicate hairlines that were increasingly detached from the written letterforms.</p>
+        <div class="line-grid">
+            <div class="line-separator"></div>
+            <div class="midten" style="color: white"></div>
+            <div class="line-separator"></div>
+        </div>
+    </section>
+    <div class="line-separator2"></div>
+    <section id="section2">
+        <h2>Font</h2>
+        <div class="line-separator1"></div>
+        <h3>Uppercase</h3>
+        <div class="characters" id="majuskler"></div>
+        <h3>Lowercase</h3>
+        <div class="characters" id="minuskler"></div>
+        <h3>Numbers</h3>
+        <div class="characters" id="tall"><span></span></div>
+    </section>
+    <div class="line-separator2"></div>
+    <section id="section3">
+        <h2>Characters</h2>
+        <div class="line-separator1"></div>
+        <div class="characters" id="tegn"></div>
+    </section>
+    <div class="line-separator2"></div>
+    <section id="section4">
+        <h2>Styles</h2>
+        <div class="line-separator1"></div>
+        <div class="scrolling">
+            <p>Big fjords vex quick waltz nymph</p>
+            <p>Big fjords vex quick waltz nymph</p>
+            <p>Big fjords vex quick waltz nymph</p>
+            <p>Big fjords vex quick waltz nymph</p>
+            <p>Big fjords vex quick waltz nymph</p>
+            <p>Big fjords vex quick waltz nymph</p>
+        </div>
+        <div class="line-grid">
+            <div class="line-separator"></div>
+            <div class="midten" style="color: white"></div>
+            <div class="line-separator"></div>
+        </div>
+    </section>
+    <div class="line-separator2"></div>
+    <section id="section5">
+        <div id="quote">
+            <div class="lastwords">
+                <p>Last <br>Words</p>
+            </div>
+            <div class="quotetext">
+                <p>"The taste of death <br>is upon my lips.</p>
+                <p>I feel something that is <br>not of this earth."</p>
+                <p>- Mozart</p>
+            </div>
+        </div>
+        <footer>
+            <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web" target="_blank"><strong>This
+                    font is licensed
+                    under:</strong> Open Font License</a>
+        </footer>
+    </section>
+
+    <script>
+
+        var robotolink = document.getElementById("robotolink");
+        var majuskler = document.getElementById("majuskler");
+        var tekst = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
+        var htmlElement = document.querySelector("html");
+
+        var bokstaver = tekst.split("");
+
+
+
+        for (var bokstav of bokstaver) {
+
+            var spanBokstav = document.createElement("span");
+            spanBokstav.innerHTML = bokstav;
+            majuskler.appendChild(spanBokstav);
+
+
+        }
+
+        var minuskler = document.getElementById("minuskler");
+        var tekst = "abcdefghijklmnopqrstuvwxyzæøå";
+
+        var bokstaver = tekst.split("");
+
+
+
+        for (var bokstav of bokstaver) {
+
+            var spanBokstav = document.createElement("span");
+            spanBokstav.innerHTML = bokstav;
+            minuskler.appendChild(spanBokstav);
+
+
+        }
+
+        var tall = document.getElementById("tall");
+        var tekst = "0123456789";
+
+        var bokstaver = tekst.split("");
+
+
+
+        for (var bokstav of bokstaver) {
+
+            var spanBokstav = document.createElement("span");
+            spanBokstav.innerHTML = bokstav;
+            tall.appendChild(spanBokstav);
+
+
+        }
+
+        var tegn = document.getElementById("tegn");
+        var tekst = "ČĆDĐŠŽčćdđšžАБВГҐДЂЕЁЄЖЗЅИІЇЙЈКЛЉМНЊОПРСТЋУЎФХЦЧЏШЩЪЫЬЭЮЯабвгґдђеёєжзѕиіїйјклљмнњопрстћуўфхцчџшщъыьэюяΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψωάΆέΈέΉίϊΐΊόΌύΰϋΎΫΏĂÂÊÔƠƯăâêôơư‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*";
+
+        var bokstaver = tekst.split("");
+
+
+
+        for (var bokstav of bokstaver) {
+
+            var spanBokstav = document.createElement("span");
+            spanBokstav.innerHTML = bokstav;
+            tegn.appendChild(spanBokstav);
+
+
+        }
+
+
+        onscroll = () => {
+            console.log(scrollY);
+
+
+            if (scrollY >= 4877) {
+                robotolink.href = "roboto.html#section5";
+            }
+            else if (scrollY >= 3741) {
+                robotolink.href = "roboto.html#section4";
+            }
+            else if (scrollY >= 2529) {
+                robotolink.href = "roboto.html#section3";
+            }
+            else if (scrollY >= 1272) {
+                robotolink.href = "roboto.html#section2";
+            }
+
+            else {
+                robotolink.href = "roboto.html";
+            }
+
+        }
+
+        htmlElement.style.scrollBehavior = "auto";
+
+        setTimeout(function () {
+            htmlElement.style.scrollBehavior = "smooth";
+        }, 100);
+
+
+
+    </script>
+
+</body>
+
+</html>

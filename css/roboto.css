@@ -1,0 +1,280 @@
+.grid-right {
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    padding-right: 5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+
+.grid-right #playfairdisplaylink img {
+    width: 30px;
+    height: auto;
+    opacity: 0.5;
+}
+
+.grid-right img {
+    width: 30px;
+    height: auto;
+}
+
+header {
+    z-index: 1;
+    font-family: 'Muli', sans-serif;
+    font-weight: 100;
+    padding-top: 1rem;
+    width: 100%;
+    top: 0;
+    background-color: #161616;
+    -webkit-box-shadow: 0px 1px 1px #000000;
+    -moz-box-shadow: 0px 1px 1px #000000;
+    box-shadow: 0px 1px 1px #000000;
+    position: fixed;
+}
+
+.grid-left :hover {
+    color: lightgrey;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+}
+
+p.navn {
+    font-family: 'roboto', sans-serif;
+}
+
+p.roboto_info {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0 auto 4rem auto;
+    width: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.characters {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.playfair .characters {
+    font-family: 'Roboto', serif;
+}
+
+.playfair p.navn, .playfair p.playfair_info {
+    font-family: 'Roboto', serif;
+}
+
+.scrolling {
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+
+.scrolling p:nth-child(1) {
+    font-weight: 100;
+}
+
+.scrolling p:nth-child(2) {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.scrolling p:nth-child(3) {
+    font-weight: 300;
+}
+
+.scrolling p:nth-child(4) {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.scrolling p:nth-child(5) {
+    font-weight: 400;
+}
+
+.scrolling p:nth-child(6) {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.scrolling p:nth-child(7) {
+    font-weight: 500;
+}
+
+.scrolling p:nth-child(8) {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.scrolling p:nth-child(9) {
+    font-weight: 700;
+}
+
+.scrolling p:nth-child(10) {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.scrolling p:nth-child(11) {
+    font-weight: 900;
+}
+
+.scrolling p:nth-child(12) {
+    font-weight: 900;
+    font-style: italic;
+}
+
+#quote {
+    position: relative;
+}
+
+.lastwords p {
+    font-size: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: right;
+    margin: 0 auto 0 50px;
+    opacity: 0.05;
+    position: absolute;
+    top: 150px;
+    left: 20%;
+}
+
+.quotetext p:nth-child(1) {
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align-last: left;
+    font-style: italic;
+    position: absolute;
+    top: 150px;
+    left: 33%;
+}
+
+.quotetext p:nth-child(2) {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align-last: left;
+    font-style: italic;
+    position: absolute;
+    top: 280px;
+    left: 55%;
+}
+
+.quotetext p:nth-child(3) {
+    font-size: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align-last: left;
+    font-style: italic;
+    position: absolute;
+    top: 380px;
+    left: 65%;
+}
+
+.quotetext p:nth-child(4) {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align-last: left;
+    position: absolute;
+    top: 500px;
+    left: 65%;
+}
+
+@media (max-width: 1040px) {
+    .grid-left :nth-child(2) {
+        display: none;
+    }
+    .grid-left :nth-child(3) {
+        display: none;
+    }
+    .grid-left :nth-child(4) {
+        display: none;
+    }
+    .grid-left :nth-child(5) {
+        display: none;
+    }
+    .grid-right {
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-right img {
+        width: 25px;
+    }
+    .grid-right #playfairdisplaylink img {
+        width: 25px;
+    }
+    .menylinje a {
+        font-size: 0.8rem;
+    }
+    .menylinje a.logo {
+        font-size: 1rem;
+    }
+    p.roboto_info {
+        width: 280px;
+    }
+    .grid-center {
+        justify-content: left;
+    }
+    .line-separator {
+        width: 6rem;
+    }
+    #majuskler, #minuskler, #tall {
+        max-width: 280px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    #tegn {
+        max-width: 280px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .scrolling {
+        font-size: 1rem;
+    }
+    #section5 {
+        overflow: hidden;
+    }
+    .lastwords p {
+        font-size: 100px;
+        top: 140px;
+        left: 1px;
+    }
+    .quotetext p:nth-child(1) {
+        font-size: 3rem;
+        top: 190px;
+        left: 25%;
+    }
+    .quotetext p:nth-child(2) {
+        font-size: 1.5rem;
+        top: 260px;
+        left: 58%;
+    }
+    .quotetext p:nth-child(3) {
+        font-size: 0.5rem;
+        top: 310px;
+        left: 73%;
+    }
+    .quotetext p:nth-child(4) {
+        font-size: 1rem;
+        top: 390px;
+        left: 65%;
+    }
+}
